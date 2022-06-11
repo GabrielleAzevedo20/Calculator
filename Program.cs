@@ -6,7 +6,22 @@ namespace Calculator
   {
     static void Main(string[] args)
     {
-      Divisao();
+      Menu();
+    }
+
+    static void Menu()
+    {
+      Console.Clear();
+
+      Console.WriteLine("O que deseja fazer?");
+      Console.WriteLine("1- Adição");
+      Console.WriteLine("2- Subtracao");
+      Console.WriteLine("3- Multiplicação");
+      Console.WriteLine("4- Divisão");
+
+      Console.WriteLine("___________");
+      Console.WriteLine("Selecione uma opção: ");
+      short res = short.Parse(Console.ReadLine());
     }
 
     static void Soma()
